@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+body {
+    background-color: #edeef0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    background-color: #ffffff;
+}
+.header__container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.notification {
+    position: relative;
+    display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.notification__desc {
+    margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.notification__title {
+    margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.notification__list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 62px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 320px;
+    z-index: 2;
 }
+
+.notification__item {
+    padding: 15px 10px;
+    border-bottom: 1px solid black;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: space-between;
+    background-color: #edeef0;
+}
+
+.notification__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.notification__item:hover {
+    background-color: beige;
+}
+
+.notification__btn {
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.notification__count {
+    font-size: 12px;
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fe4242;
+    padding: 0.2em;
+    min-width: 1em;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.notification__btn-delete {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.notification__btn-delete:hover {
+    transform: rotate(90deg);
+}
+.notification__empty-msg {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 10px;
+    border-bottom: 1px solid black;
+    transition: all 0.2s;
+    background-color: #edeef0;
+}
+
+.main__container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
