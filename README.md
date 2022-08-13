@@ -2,6 +2,7 @@
 ## Установка и запуск клиент
 ```sh
 cd react-test
+npm i
 npm run start
 ```
 ## Запуск сервера
