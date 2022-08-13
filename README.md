@@ -1,7 +1,7 @@
 # Тестовое задание React
 ## Установка и запуск клиент
 ```sh
-cd react-notification
+cd react-test
 npm run start
 ```
 ## Запуск сервера
